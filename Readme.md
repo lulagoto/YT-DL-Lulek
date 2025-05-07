@@ -36,7 +36,7 @@ FEATURES:
 - Print list links with error
 - Analyse link list and show some info before starting dl
 
-skrypt1.ps
+skrypt.ps1
 
     # Nagłówek
     function Show-Header {
