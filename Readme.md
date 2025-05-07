@@ -21,19 +21,17 @@ FILES:
 ######################################
 
 RUN.bat 
-run the all proces.
+run the all proces. ( simple script to run a .ps1 script code )
 
     @echo off
-    powershell -ExecutionPolicy Bypass -File ".\scr\skrypt1.ps1"
+    powershell -ExecutionPolicy Bypass -File ".\scr\skrypt.ps1"
     pause  
 
-skrypt1.ps1 
-easy transition from bat to ps1:
+skrypt.ps1
+Have options to dl mp3 / mp3 and save mp4 / only mp4
 
-    get-content ".\scr\skrypt2.txt" | Invoke-Expression
 
-skrypt2.txt 
-the whole command to run the yt-dl.exe options so that the links from list.txt are downloaded one by one and converted to mp3:
-
-    ./scr/yt-dlp -x --audio-format mp3 --audio-quality 0 --ffmpeg-location ".\ffmpeg\" -a ".\list.txt" -o ".\Downloads\%(title)s-%(id)s.%(ext)s"
-
+FEATURES:
+- Adding export bookmarks from browser, show only youtube links and check links/names what u dont want to download
+- Print list links with error
+- Analyse link list and show some info before starting dl
